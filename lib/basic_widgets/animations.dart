@@ -83,6 +83,7 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
                 ),
               ),
             ),
+            const SizedBox(height: 30),
             const Text(
               "Animated Container",
               style: TextStyle(
@@ -116,6 +117,7 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
                 fontWeight: FontWeight.w900,
               ),
             ),
+            const SizedBox(height: 30),
             InkWell(
               onTap: () {
                 setState(() {
@@ -132,6 +134,7 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
                 ),
               ),
             ),
+            const SizedBox(height: 30),
             const Text(
               "Animated CrossFade",
               style: TextStyle(
@@ -163,6 +166,7 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
                 duration: const Duration(seconds: 2),
               ),
             ),
+            const SizedBox(height: 30),
             const Text(
               "Animated Align",
               style: TextStyle(
@@ -173,28 +177,32 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample> {
             ),
             InkWell(
               onTap: () {
-                final random = Random().nextInt(arrAlignment.length - 1);
+                final random = Random().nextInt(arrAlignment.length);
                 randomAlignment = arrAlignment[random];
 
                 setState(() {});
               },
-              child: AnimatedAlign(
-                duration: const Duration(seconds: 2),
-                alignment: randomAlignment,
-                child: const SizedBox(
-                  height: 300,
-                  width: 300,
-                  child: Text(
-                    "Hello World!",
+              child: Container(
+                margin: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(10),
+                color: Colors.blue.shade200,
+                height: 250,
+                width: 400,
+                child: AnimatedAlign(
+                  duration: const Duration(seconds: 2),
+                  alignment: randomAlignment,
+                  child: const Text(
+                    "Don't Touch me! 🤭",
                     style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.blue,
+                      fontSize: 28,
+                      color: Colors.red,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                 ),
               ),
             ),
+            const SizedBox(height: 30),
             const SizedBox(height: 100),
           ],
         ),
