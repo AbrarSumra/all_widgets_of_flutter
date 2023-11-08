@@ -73,6 +73,9 @@ class _AnimatedContainerExampleState extends State<AnimatedContainerExample>
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
+        title: const Text(
+          "Animations",
+        ),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,

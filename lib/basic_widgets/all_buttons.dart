@@ -7,9 +7,7 @@ class AllButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(
-          child: Text("Button-Types"),
-        ),
+        title: const Text("Button-Types"),
         backgroundColor: Colors.blue,
       ),
       backgroundColor: Colors.blue.shade100,

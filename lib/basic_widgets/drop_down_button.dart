@@ -14,6 +14,7 @@ class _DropDownButtonState extends State<DropDownButton> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: const Text("Drop Down Button"),
         backgroundColor: Colors.blue,
       ),
       backgroundColor: Colors.blue.shade200,

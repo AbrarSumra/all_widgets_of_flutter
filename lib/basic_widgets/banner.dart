@@ -23,11 +23,9 @@ class _BannerPageState extends State<BannerPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: isDarkTheme ? Colors.yellow : Colors.blue,
-        title: const Center(
-          child: Text(
-            "Banner Widget",
-            style: TextStyle(color: Colors.black),
-          ),
+        title: const Text(
+          "Banner Widget",
+          style: TextStyle(color: Colors.black),
         ),
         actions: [
           Switch(

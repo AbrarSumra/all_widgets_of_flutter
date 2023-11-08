@@ -7,7 +7,7 @@ class DateTimePicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Dialog Box"),
+        title: const Text("Date - Time Picker"),
         backgroundColor: Colors.blue,
       ),
       body: Center(
