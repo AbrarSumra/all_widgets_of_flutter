@@ -1,7 +1,9 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
-class EditListTile extends StatefulWidget {
+class EditListTile extends StatelessWidget {
   EditListTile({
     super.key,
     required this.indexNo,
@@ -11,17 +13,12 @@ class EditListTile extends StatefulWidget {
     required this.onTap,
   });
 
-  dynamic indexNo;
+  int indexNo;
   String titleName;
   String subTitleName;
   Color color;
   VoidCallback onTap;
 
-  @override
-  State<EditListTile> createState() => _EditListTileState();
-}
-
-class _EditListTileState extends State<EditListTile> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -34,7 +31,7 @@ class _EditListTileState extends State<EditListTile> {
               backgroundColor: Colors.yellow.shade700,
               radius: 25,
               child: Text(
-                widget.indexNo.toString(),
+                indexNo.toString(),
                 style: const TextStyle(
                   fontSize: 31,
                   color: Colors.red,
@@ -42,7 +39,7 @@ class _EditListTileState extends State<EditListTile> {
               ),
             ),
             title: Text(
-              widget.titleName,
+              titleName,
               style: const TextStyle(
                 fontSize: 21,
                 fontWeight: FontWeight.bold,
@@ -51,7 +48,7 @@ class _EditListTileState extends State<EditListTile> {
               ),
             ),
             subtitle: Text(
-              widget.subTitleName,
+              subTitleName,
               style: const TextStyle(
                 fontSize: 18,
                 letterSpacing: 5,
@@ -62,8 +59,8 @@ class _EditListTileState extends State<EditListTile> {
               Icons.arrow_forward_ios,
               color: Colors.white,
             ),
-            tileColor: widget.color,
-            onTap: widget.onTap,
+            tileColor: color,
+            onTap: onTap,
           ),
         ],
       ),
