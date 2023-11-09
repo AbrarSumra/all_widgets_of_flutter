@@ -26,7 +26,7 @@ class _DialogBoxesState extends State<DialogBoxes> {
               onPressed: () {
                 showDialog(
                     context: context,
-                    barrierDismissible: false,
+                    barrierDismissible: true,
                     barrierColor: Colors.blue.withOpacity(0.2),
                     builder: (ctx) {
                       return AlertDialog(
@@ -89,6 +89,7 @@ class _DialogBoxesState extends State<DialogBoxes> {
               child: const Text("Abount Dialog"),
               onPressed: () {
                 showDialog(
+                    barrierDismissible: true,
                     context: context,
                     builder: (ctx) {
                       return const AboutDialog(
@@ -106,75 +107,78 @@ class _DialogBoxesState extends State<DialogBoxes> {
                 showGeneralDialog(
                     context: context,
                     pageBuilder: (ctx, __, ___) {
-                      return Center(
-                        child: Container(
-                          height: 300,
-                          margin: const EdgeInsets.symmetric(horizontal: 20),
-                          decoration: BoxDecoration(
-                            color: Colors.blue.shade200,
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          child: Material(
-                            color: Colors.transparent,
-                            child: Column(
-                              children: [
-                                const Padding(
-                                  padding: EdgeInsets.symmetric(vertical: 10),
-                                  child: Text(
-                                    "Add Notes",
-                                    style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(10),
-                                  child: TextFormField(
-                                    decoration: const InputDecoration(
-                                      border: OutlineInputBorder(),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(10),
-                                  child: TextFormField(
-                                    decoration: const InputDecoration(
-                                      border: OutlineInputBorder(),
-                                    ),
-                                  ),
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.end,
-                                  children: [
-                                    TextButton(
-                                      child: const Text(
-                                        "Add",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                        ),
+                      return Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Container(
+                            height: 300,
+                            margin: const EdgeInsets.symmetric(horizontal: 20),
+                            decoration: BoxDecoration(
+                              color: Colors.blue.shade200,
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            child: Material(
+                              color: Colors.transparent,
+                              child: Column(
+                                children: [
+                                  const Padding(
+                                    padding: EdgeInsets.symmetric(vertical: 10),
+                                    child: Text(
+                                      "Add Notes",
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.bold,
                                       ),
-                                      onPressed: () {},
                                     ),
-                                    TextButton(
-                                      child: const Text(
-                                        "Cancel",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
-                                        ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: TextFormField(
+                                      decoration: const InputDecoration(
+                                        border: OutlineInputBorder(),
                                       ),
-                                      onPressed: () {
-                                        Navigator.pop(context);
-                                      },
                                     ),
-                                  ],
-                                )
-                              ],
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: TextFormField(
+                                      decoration: const InputDecoration(
+                                        border: OutlineInputBorder(),
+                                      ),
+                                    ),
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      TextButton(
+                                        child: const Text(
+                                          "Add",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        onPressed: () {},
+                                      ),
+                                      TextButton(
+                                        child: const Text(
+                                          "Cancel",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        onPressed: () {
+                                          Navigator.pop(context);
+                                        },
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
                             ),
                           ),
-                        ),
+                        ],
                       );
                     });
               },
