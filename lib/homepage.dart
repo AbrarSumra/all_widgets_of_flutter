@@ -6,7 +6,9 @@ import 'package:all_in_one_widgets/basic_widgets/bottom_drawer.dart';
 import 'package:all_in_one_widgets/basic_widgets/clip_path_screen.dart';
 import 'package:all_in_one_widgets/basic_widgets/clip_r_rect.dart';
 import 'package:all_in_one_widgets/basic_widgets/drop_down_button.dart';
+import 'package:all_in_one_widgets/basic_widgets/explicit_animation.dart';
 import 'package:all_in_one_widgets/basic_widgets/hero_animation.dart';
+import 'package:all_in_one_widgets/basic_widgets/page_transitions.dart';
 import 'package:all_in_one_widgets/basic_widgets/radio_checkbox_button.dart';
 import 'package:all_in_one_widgets/basic_widgets/date_time_picker.dart';
 import 'package:all_in_one_widgets/basic_widgets/dialog_box.dart';
@@ -160,7 +162,19 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 7,
+              indexNo: 17,
+              titleName: "Explicit Animation",
+              subTitleName: "Complete",
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (ctx) => const ExplicitAnimationScreen()));
+              },
+            ),
+            EditListTile(
+              color: Colors.purple,
+              indexNo: 9,
               titleName: "Alphabetically List",
               subTitleName: "Complete",
               onTap: () {
@@ -172,7 +186,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 8,
+              indexNo: 10,
               titleName: "Dialog Boxes",
               subTitleName: "Completed",
               onTap: () {
@@ -182,7 +196,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 9,
+              indexNo: 11,
               titleName: "Date & Timer Picker",
               subTitleName: "Completed",
               onTap: () {
@@ -194,7 +208,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 10,
+              indexNo: 12,
               titleName: "Snack Bar",
               subTitleName: "Completed",
               onTap: () {
@@ -206,7 +220,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 11,
+              indexNo: 13,
               titleName: "Radio-CheckBox",
               subTitleName: "Completed",
               onTap: () {
@@ -216,7 +230,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 12,
+              indexNo: 14,
               titleName: "Clip-R-Rect",
               subTitleName: "Completed",
               onTap: () {
@@ -228,7 +242,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 13,
+              indexNo: 15,
               titleName: "ClipPath",
               subTitleName: "Completed",
               onTap: () {
@@ -236,6 +250,18 @@ class _MyFirstPageState extends State<MyFirstPage> {
                     context,
                     MaterialPageRoute(
                         builder: (ctx) => const ClipPathScreen()));
+              },
+            ),
+            EditListTile(
+              color: Colors.purple,
+              indexNo: 16,
+              titleName: "Page Transitions",
+              subTitleName: "Complete",
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (ctx) => const PageTransitionsScreen()));
               },
             ),
             const SizedBox(height: 20),
