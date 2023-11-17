@@ -13,6 +13,7 @@ import 'package:all_in_one_widgets/basic_widgets/radio_checkbox_button.dart';
 import 'package:all_in_one_widgets/basic_widgets/date_time_picker.dart';
 import 'package:all_in_one_widgets/basic_widgets/dialog_box.dart';
 import 'package:all_in_one_widgets/basic_widgets/grid_view.dart';
+import 'package:all_in_one_widgets/basic_widgets/all_animations.dart';
 import 'package:all_in_one_widgets/basic_widgets/screen_for_basic_widgets/animated_text.dart';
 import 'package:all_in_one_widgets/basic_widgets/snack_bar_screen.dart';
 import 'package:all_in_one_widgets/modules/list__tile_edited.dart';
@@ -132,44 +133,8 @@ class _MyFirstPageState extends State<MyFirstPage> {
               titleName: "All Animations",
               subTitleName: "Complete",
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (ctx) => const AnimatedContainerExample()));
-              },
-            ),
-            EditListTile(
-              color: Colors.purple,
-              indexNo: 7,
-              titleName: "Hero Animation",
-              subTitleName: "Complete",
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (ctx) => const HeroAnimationScreen()));
-              },
-            ),
-            EditListTile(
-              color: Colors.purple,
-              indexNo: 8,
-              titleName: "Animated Text",
-              subTitleName: "Completed",
-              onTap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (ctx) => AnimatedTextScreen()));
-              },
-            ),
-            EditListTile(
-              color: Colors.purple,
-              indexNo: 17,
-              titleName: "Explicit Animation",
-              subTitleName: "Complete",
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (ctx) => const ExplicitAnimationScreen()));
+                    MaterialPageRoute(builder: (ctx) => const AllAnimations()));
               },
             ),
             EditListTile(
