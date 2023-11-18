@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AnimatedTextScreen extends StatelessWidget {
@@ -25,18 +26,18 @@ class AnimatedTextScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 10),
+            SizedBox(height: 10.h),
             Container(
-              height: 50,
+              height: 50.h.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
                 borderRadius: BorderRadius.circular(50),
               ),
-              child: const Text(
+              child: Text(
                 "Rotate Text",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 25.sp,
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
                 ),
@@ -44,23 +45,23 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              height: 100,
+              height: 100.h.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
+                  Text(
                     "BE",
                     style: TextStyle(
-                      fontSize: 40,
+                      fontSize: 40.sp,
                       color: Colors.white,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const SizedBox(width: 20),
+                  SizedBox(width: 20.w),
                   SizedBox(
-                    width: 185,
+                    width: 185.w,
                     child: Row(
                       children: [
                         AnimatedTextKit(
@@ -69,7 +70,7 @@ class AnimatedTextScreen extends StatelessWidget {
                             RotateAnimatedText(
                               "Happy",
                               textStyle: GoogleFonts.adamina(
-                                fontSize: 40,
+                                fontSize: 40.sp,
                                 color: Colors.blue,
                                 fontWeight: FontWeight.w900,
                               ),
@@ -77,7 +78,7 @@ class AnimatedTextScreen extends StatelessWidget {
                             RotateAnimatedText(
                               "Awesome",
                               textStyle: GoogleFonts.adamina(
-                                fontSize: 40,
+                                fontSize: 40.sp,
                                 color: Colors.blue,
                                 fontWeight: FontWeight.w900,
                               ),
@@ -85,7 +86,7 @@ class AnimatedTextScreen extends StatelessWidget {
                             RotateAnimatedText(
                               "Careful",
                               textStyle: GoogleFonts.adamina(
-                                fontSize: 40,
+                                fontSize: 40.sp,
                                 color: Colors.blue,
                                 fontWeight: FontWeight.w900,
                               ),
@@ -93,7 +94,7 @@ class AnimatedTextScreen extends StatelessWidget {
                             RotateAnimatedText(
                               "Ready",
                               textStyle: GoogleFonts.adamina(
-                                fontSize: 40,
+                                fontSize: 40.sp,
                                 color: Colors.blue,
                                 fontWeight: FontWeight.w900,
                               ),
@@ -106,25 +107,26 @@ class AnimatedTextScreen extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 20.h),
             Container(
-              height: 50,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
                 borderRadius: BorderRadius.circular(50),
               ),
-              child: const Text(
+              child: Text(
                 "Fade Text",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 25.sp,
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
                 ),
               ),
             ),
             Container(
-              width: double.infinity,
-              height: 100,
+              width: double.infinity.w,
+              height: 100.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
@@ -136,7 +138,7 @@ class AnimatedTextScreen extends StatelessWidget {
                       FadeAnimatedText(
                         "Hello",
                         textStyle: GoogleFonts.b612(
-                          fontSize: 50,
+                          fontSize: 50.sp,
                           color: Colors.purple,
                           fontWeight: FontWeight.w900,
                         ),
@@ -144,7 +146,7 @@ class AnimatedTextScreen extends StatelessWidget {
                       FadeAnimatedText(
                         "World!",
                         textStyle: GoogleFonts.b612(
-                          fontSize: 50,
+                          fontSize: 50.sp,
                           color: Colors.purple,
                           fontWeight: FontWeight.w900,
                         ),
@@ -154,26 +156,26 @@ class AnimatedTextScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 20),
+            SizedBox(height: 20.h),
             Container(
-              height: 50,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
                 borderRadius: BorderRadius.circular(50),
               ),
-              child: const Text(
+              child: Text(
                 "Typer Text",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 25.sp,
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
                 ),
               ),
             ),
             Container(
-              width: double.infinity,
-              height: 100,
+              width: double.infinity.w,
+              height: 100.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
@@ -186,7 +188,7 @@ class AnimatedTextScreen extends StatelessWidget {
                         "Hello Everyone",
                         speed: const Duration(milliseconds: 100),
                         textStyle: GoogleFonts.cabinSketch(
-                          fontSize: 35,
+                          fontSize: 35.sp,
                           color: Colors.blue,
                           fontWeight: FontWeight.w900,
                         ),
@@ -195,7 +197,7 @@ class AnimatedTextScreen extends StatelessWidget {
                         "Welcome to the Flutter",
                         speed: const Duration(milliseconds: 100),
                         textStyle: GoogleFonts.cabinSketch(
-                          fontSize: 35,
+                          fontSize: 30.sp,
                           color: Colors.blue,
                           fontWeight: FontWeight.w900,
                         ),
@@ -207,7 +209,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Container(
-              height: 50,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
@@ -224,7 +226,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              height: 100,
+              height: 100.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
@@ -237,7 +239,7 @@ class AnimatedTextScreen extends StatelessWidget {
                         "My name is Abrar Khira",
                         speed: const Duration(milliseconds: 250),
                         textStyle: GoogleFonts.damion(
-                          fontSize: 35,
+                          fontSize: 30.sp,
                           color: Colors.blue,
                           fontWeight: FontWeight.w900,
                         ),
@@ -258,7 +260,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Container(
-              height: 50,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
@@ -275,7 +277,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              height: 100,
+              height: 100.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
@@ -318,16 +320,16 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Container(
-              height: 50,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
                 borderRadius: BorderRadius.circular(50),
               ),
-              child: const Text(
+              child: Text(
                 "Colorize Text",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 25.sp,
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
                 ),
@@ -335,7 +337,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              height: 100,
+              height: 100.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
@@ -349,7 +351,7 @@ class AnimatedTextScreen extends StatelessWidget {
                         "What are you doing ?",
                         speed: const Duration(seconds: 1),
                         textStyle: GoogleFonts.aldrich(
-                          fontSize: 35,
+                          fontSize: 30.sp,
                           color: Colors.blue,
                           fontWeight: FontWeight.w900,
                         ),
@@ -362,16 +364,16 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Container(
-              height: 50,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
                 borderRadius: BorderRadius.circular(50),
               ),
-              child: const Text(
+              child: Text(
                 "Wavy Text",
                 style: TextStyle(
-                  fontSize: 25,
+                  fontSize: 20.sp,
                   color: Colors.white,
                   fontWeight: FontWeight.w900,
                 ),
@@ -379,7 +381,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              height: 100,
+              height: 100.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
@@ -392,7 +394,7 @@ class AnimatedTextScreen extends StatelessWidget {
                       WavyAnimatedText(
                         "What are you doing ?",
                         textStyle: GoogleFonts.habibi(
-                          fontSize: 35,
+                          fontSize: 30.sp,
                           color: Colors.blue,
                           fontWeight: FontWeight.w900,
                         ),
@@ -404,7 +406,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Container(
-              height: 50,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
@@ -424,11 +426,12 @@ class AnimatedTextScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 TextLiquidFill(
-                  boxHeight: 150,
+                  boxWidth: 300,
+                  boxHeight: 130,
                   text: "LIQUID",
                   loadUntil: 0.5,
                   textStyle: GoogleFonts.habibi(
-                    fontSize: 100,
+                    fontSize: 60.sp,
                     color: Colors.blue,
                     fontWeight: FontWeight.w900,
                   ),
@@ -437,7 +440,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Container(
-              height: 50,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
@@ -454,7 +457,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              height: 100,
+              height: 100.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
@@ -467,7 +470,7 @@ class AnimatedTextScreen extends StatelessWidget {
                       FlickerAnimatedText(
                         "AWESOME",
                         textStyle: GoogleFonts.habibi(
-                          fontSize: 60,
+                          fontSize: 60.sp,
                           shadows: [
                             const Shadow(
                               blurRadius: 20,
@@ -481,7 +484,7 @@ class AnimatedTextScreen extends StatelessWidget {
                       FlickerAnimatedText(
                         "HAPPY",
                         textStyle: GoogleFonts.habibi(
-                          fontSize: 60,
+                          fontSize: 60.sp,
                           shadows: [
                             const Shadow(
                               blurRadius: 20,

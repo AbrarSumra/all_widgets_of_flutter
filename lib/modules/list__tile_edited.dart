@@ -1,10 +1,10 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-// ignore: must_be_immutable
 class EditListTile extends StatelessWidget {
-  EditListTile({
+  const EditListTile({
     super.key,
     required this.indexNo,
     required this.titleName,
@@ -13,11 +13,11 @@ class EditListTile extends StatelessWidget {
     required this.onTap,
   });
 
-  int indexNo;
-  String titleName;
-  String subTitleName;
-  Color color;
-  VoidCallback onTap;
+  final int indexNo;
+  final String titleName;
+  final String subTitleName;
+  final Color color;
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -29,19 +29,19 @@ class EditListTile extends StatelessWidget {
           ListTile(
             leading: CircleAvatar(
               backgroundColor: Colors.yellow.shade700,
-              radius: 25,
+              radius: 25.r,
               child: Text(
                 indexNo.toString(),
-                style: const TextStyle(
-                  fontSize: 31,
+                style: TextStyle(
+                  fontSize: 31.sp,
                   color: Colors.red,
                 ),
               ),
             ),
             title: Text(
               titleName,
-              style: const TextStyle(
-                fontSize: 21,
+              style: TextStyle(
+                fontSize: 18.sp,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 2,
                 color: Colors.white,
@@ -49,8 +49,8 @@ class EditListTile extends StatelessWidget {
             ),
             subtitle: Text(
               subTitleName,
-              style: const TextStyle(
-                fontSize: 18,
+              style: TextStyle(
+                fontSize: 18.sp,
                 letterSpacing: 5,
                 color: Colors.yellow,
               ),

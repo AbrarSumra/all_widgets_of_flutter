@@ -26,10 +26,9 @@ class _AlphabeticalListState extends State<AlphabeticalList> {
     "Payal",
     "Abrar",
     "Jagulii",
-    "Khushi",
+    "Thushi",
     "Maya",
     "Hiral",
-    "Aasha",
     "Chandrika",
     "Mansi",
   ];

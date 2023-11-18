@@ -139,7 +139,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 9,
+              indexNo: 7,
               titleName: "Alphabetically List",
               subTitleName: "Complete",
               onTap: () {
@@ -151,7 +151,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 10,
+              indexNo: 8,
               titleName: "Dialog Boxes",
               subTitleName: "Completed",
               onTap: () {
@@ -161,7 +161,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 11,
+              indexNo: 9,
               titleName: "Date & Timer Picker",
               subTitleName: "Completed",
               onTap: () {
@@ -173,7 +173,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 12,
+              indexNo: 10,
               titleName: "Snack Bar",
               subTitleName: "Completed",
               onTap: () {
@@ -185,7 +185,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 13,
+              indexNo: 11,
               titleName: "Radio-CheckBox",
               subTitleName: "Completed",
               onTap: () {
@@ -195,7 +195,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 14,
+              indexNo: 12,
               titleName: "Clip-R-Rect",
               subTitleName: "Completed",
               onTap: () {
@@ -207,7 +207,7 @@ class _MyFirstPageState extends State<MyFirstPage> {
             ),
             EditListTile(
               color: Colors.purple,
-              indexNo: 15,
+              indexNo: 13,
               titleName: "ClipPath",
               subTitleName: "Completed",
               onTap: () {
@@ -215,18 +215,6 @@ class _MyFirstPageState extends State<MyFirstPage> {
                     context,
                     MaterialPageRoute(
                         builder: (ctx) => const ClipPathScreen()));
-              },
-            ),
-            EditListTile(
-              color: Colors.purple,
-              indexNo: 16,
-              titleName: "Page Transitions",
-              subTitleName: "Complete",
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (ctx) => const PageTransitionsScreen()));
               },
             ),
             const SizedBox(height: 20),

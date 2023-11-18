@@ -17,11 +17,12 @@ class ClipPathScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper1(),
                       child: Image.asset(
@@ -32,8 +33,8 @@ class ClipPathScreen extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper2(),
                       child: Image.asset(
@@ -45,11 +46,12 @@ class ClipPathScreen extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper3(),
                       child: Image.asset(
@@ -60,8 +62,8 @@ class ClipPathScreen extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper4(),
                       child: Image.asset(
@@ -73,11 +75,12 @@ class ClipPathScreen extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper5(),
                       child: Image.asset(
@@ -88,8 +91,8 @@ class ClipPathScreen extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper6(),
                       child: Image.asset(
@@ -101,11 +104,12 @@ class ClipPathScreen extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper7(),
                       child: Image.asset(
@@ -116,8 +120,8 @@ class ClipPathScreen extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper8(),
                       child: Image.asset(
@@ -129,11 +133,12 @@ class ClipPathScreen extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper9(),
                       child: Image.asset(
@@ -144,8 +149,8 @@ class ClipPathScreen extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper10(),
                       child: Image.asset(
@@ -157,11 +162,12 @@ class ClipPathScreen extends StatelessWidget {
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper11(),
                       child: Image.asset(
@@ -172,8 +178,8 @@ class ClipPathScreen extends StatelessWidget {
                   ),
                   Container(
                     padding: const EdgeInsets.all(10),
-                    width: 200,
-                    height: 200,
+                    width: 180,
+                    height: 180,
                     child: ClipPath(
                       clipper: Clipper12(),
                       child: Image.asset(
@@ -187,8 +193,8 @@ class ClipPathScreen extends StatelessWidget {
               ClipPath(
                 clipper: Clipper13(),
                 child: Container(
-                  height: 200,
-                  width: 400,
+                  height: 180,
+                  width: 340,
                   color: Colors.blue,
                 ),
               ),
@@ -196,8 +202,8 @@ class ClipPathScreen extends StatelessWidget {
               ClipPath(
                 clipper: Clipper14(),
                 child: Container(
-                  height: 200,
-                  width: 400,
+                  height: 180,
+                  width: 340,
                   color: Colors.orange,
                 ),
               ),
