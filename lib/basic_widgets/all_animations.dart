@@ -1,5 +1,6 @@
 import 'package:all_in_one_widgets/basic_widgets/lottie_animation.dart';
 import 'package:all_in_one_widgets/basic_widgets/screen_for_basic_widgets/animation_builder.dart';
+import 'package:all_in_one_widgets/basic_widgets/screen_for_basic_widgets/rive_animation.dart';
 import 'package:flutter/material.dart';
 
 import '../modules/list__tile_edited.dart';
@@ -89,6 +90,16 @@ class AllAnimations extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (ctx) => const LottieAnimation()));
+              },
+            ),
+            EditListTile(
+              color: Colors.blue,
+              indexNo: 6,
+              titleName: "Rive Animation",
+              subTitleName: "Complete",
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (ctx) => const RiveAnimation()));
               },
             ),
           ],
