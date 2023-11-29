@@ -15,6 +15,7 @@ import 'package:all_in_one_widgets/basic_widgets/dialog_box.dart';
 import 'package:all_in_one_widgets/basic_widgets/grid_view.dart';
 import 'package:all_in_one_widgets/basic_widgets/all_animations.dart';
 import 'package:all_in_one_widgets/basic_widgets/screen_for_basic_widgets/animated_text.dart';
+import 'package:all_in_one_widgets/basic_widgets/shared_preferences.dart';
 import 'package:all_in_one_widgets/basic_widgets/snack_bar_screen.dart';
 import 'package:all_in_one_widgets/modules/list__tile_edited.dart';
 import 'package:flutter/material.dart';
@@ -215,6 +216,18 @@ class _MyFirstPageState extends State<MyFirstPage> {
                     context,
                     MaterialPageRoute(
                         builder: (ctx) => const ClipPathScreen()));
+              },
+            ),
+            EditListTile(
+              color: Colors.purple,
+              indexNo: 14,
+              titleName: "Shared Preferences",
+              subTitleName: "Completed",
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (ctx) => const SharedPreferenceScreen()));
               },
             ),
             const SizedBox(height: 20),

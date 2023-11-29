@@ -28,7 +28,7 @@ class AnimatedTextScreen extends StatelessWidget {
           children: [
             SizedBox(height: 10.h),
             Container(
-              height: 50.h.h,
+              height: 50.h,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: Colors.orange,
@@ -45,7 +45,7 @@ class AnimatedTextScreen extends StatelessWidget {
             ),
             Container(
               width: double.infinity,
-              height: 100.h.h,
+              height: 100.h,
               margin: const EdgeInsets.all(10),
               color: Colors.red.shade200,
               child: Row(
