@@ -1,3 +1,4 @@
+import 'package:all_in_one_widgets/basic_widgets/ProviderScreen/counter_provider.dart';
 import 'package:all_in_one_widgets/basic_widgets/alphabetical_list.dart';
 import 'package:all_in_one_widgets/basic_widgets/animations.dart';
 import 'package:all_in_one_widgets/basic_widgets/all_buttons.dart';
@@ -19,6 +20,8 @@ import 'package:all_in_one_widgets/basic_widgets/shared_preferences.dart';
 import 'package:all_in_one_widgets/basic_widgets/snack_bar_screen.dart';
 import 'package:all_in_one_widgets/modules/list__tile_edited.dart';
 import 'package:flutter/material.dart';
+
+import 'basic_widgets/ProviderScreen/provider_screen.dart';
 
 class MyFirstPage extends StatefulWidget {
   const MyFirstPage({super.key});
@@ -228,6 +231,18 @@ class _MyFirstPageState extends State<MyFirstPage> {
                     context,
                     MaterialPageRoute(
                         builder: (ctx) => const SharedPreferenceScreen()));
+              },
+            ),
+            EditListTile(
+              color: Colors.purple,
+              indexNo: 15,
+              titleName: "Provider",
+              subTitleName: "Completed",
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (ctx) => const ProviderScreen()));
               },
             ),
             const SizedBox(height: 20),
