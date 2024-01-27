@@ -1,7 +1,29 @@
 import 'package:flutter/material.dart';
 
-class DateTimePicker extends StatelessWidget {
+class DateTimePicker extends StatefulWidget {
   const DateTimePicker({super.key});
+
+  @override
+  State<DateTimePicker> createState() => _DateTimePickerState();
+}
+
+class _DateTimePickerState extends State<DateTimePicker> {
+  TextEditingController dateController = TextEditingController();
+
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime? selectedDate = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2000, 2, 15),
+      lastDate: DateTime.now(),
+    );
+
+    if (selectedDate != null && selectedDate != DateTime.now()) {
+      setState(() {
+        dateController.text = selectedDate.toLocal().toString().split(" ")[0];
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,13 +40,17 @@ class DateTimePicker extends StatelessWidget {
             ElevatedButton(
               child: const Text("Date Picker"),
               onPressed: () async {
-                var selectedDate = await showDatePicker(
-                  context: context,
-                  initialDate: DateTime.now(),
-                  firstDate: DateTime(2000, 2, 15),
-                  lastDate: DateTime.now(),
-                );
+                _selectDate(context);
               },
+            ),
+            Padding(
+              padding: const EdgeInsets.all(15),
+              child: TextFormField(
+                controller: dateController,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                ),
+              ),
             ),
             ElevatedButton(
               child: const Text("Time Picker"),
@@ -45,7 +71,7 @@ class DateTimePicker extends StatelessWidget {
                 );
 
                 if (selectedRangePicker != null) {
-                  print(
+                  Text(
                       "Selected Date Range: ${selectedRangePicker.start.day}/${selectedRangePicker.start.month}/${selectedRangePicker.start.year} - ${selectedRangePicker.end.day}/${selectedRangePicker.end.month}/${selectedRangePicker.end.year}");
                 }
               },
