@@ -1,21 +1,16 @@
-import 'package:all_in_one_widgets/basic_widgets/ProviderScreen/counter_provider.dart';
 import 'package:all_in_one_widgets/basic_widgets/alphabetical_list.dart';
-import 'package:all_in_one_widgets/basic_widgets/animations.dart';
 import 'package:all_in_one_widgets/basic_widgets/all_buttons.dart';
 import 'package:all_in_one_widgets/basic_widgets/banner.dart';
 import 'package:all_in_one_widgets/basic_widgets/bottom_drawer.dart';
 import 'package:all_in_one_widgets/basic_widgets/clip_path_screen.dart';
 import 'package:all_in_one_widgets/basic_widgets/clip_r_rect.dart';
 import 'package:all_in_one_widgets/basic_widgets/drop_down_button.dart';
-import 'package:all_in_one_widgets/basic_widgets/explicit_animation.dart';
-import 'package:all_in_one_widgets/basic_widgets/hero_animation.dart';
-import 'package:all_in_one_widgets/basic_widgets/page_transitions.dart';
+import 'package:all_in_one_widgets/basic_widgets/notification_implement/notification_screen.dart';
 import 'package:all_in_one_widgets/basic_widgets/radio_checkbox_button.dart';
 import 'package:all_in_one_widgets/basic_widgets/date_time_picker.dart';
 import 'package:all_in_one_widgets/basic_widgets/dialog_box.dart';
 import 'package:all_in_one_widgets/basic_widgets/grid_view.dart';
 import 'package:all_in_one_widgets/basic_widgets/all_animations.dart';
-import 'package:all_in_one_widgets/basic_widgets/screen_for_basic_widgets/animated_text.dart';
 import 'package:all_in_one_widgets/basic_widgets/shared_preferences.dart';
 import 'package:all_in_one_widgets/basic_widgets/snack_bar_screen.dart';
 import 'package:all_in_one_widgets/modules/list__tile_edited.dart';
@@ -243,6 +238,18 @@ class _MyFirstPageState extends State<MyFirstPage> {
                     context,
                     MaterialPageRoute(
                         builder: (ctx) => const ProviderScreen()));
+              },
+            ),
+            EditListTile(
+              color: Colors.purple,
+              indexNo: 16,
+              titleName: "Notification",
+              subTitleName: "Completed",
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (ctx) => const NotificationScreen()));
               },
             ),
             const SizedBox(height: 20),
